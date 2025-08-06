@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name         VkPlay. Спрятать комментарии
+@namespace    gil9red
+@version      2025-08-07
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/VkPlay.%20Спрятать%20комментарии.user.css
+==/UserStyle== */
+
+@-moz-document domain("media.vkplay.ru"), url-prefix("https://vkplay.ru/media/") {
+  .comments__form,
+  .comments__controls ~ * {
+      display: none;
+  }
+  .comments:not(:has(.comments__empty))::after {
+      content: "// Комментарии спрятаны Stylus";
+      font-size: larger;
+  }
+}
