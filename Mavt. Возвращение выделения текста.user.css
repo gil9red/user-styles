@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name         Mavt. Возвращение выделения текста
+@namespace    gil9red
+@version      2025-08-09
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/Mavt.%20Возвращение%20выделения%20текста.user.css
+==/UserStyle== */
+
+@-moz-document domain("mavt.ru") {
+  * {
+      user-select: auto !important;
+  }
+}
