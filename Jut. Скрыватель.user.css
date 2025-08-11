@@ -1,0 +1,27 @@
+/* ==UserStyle==
+@name         Jut. Скрыватель
+@namespace    gil9red
+@version      2025-08-12
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/Jut.%20Скрыватель.user.css
+==/UserStyle== */
+
+@-moz-document domain("jut.su") {
+  .videoContent {
+      padding: 0 !important;
+  }
+  
+  .header, 
+  .logo_b, 
+  .slicknav_menu, 
+  .social_links > li > a:not(.nav_i),
+  .achiv_switcher
+  {
+      display: none !important;
+  }
+  
+  .post_media {
+      margin-top: 2px !important;
+  }
+}
