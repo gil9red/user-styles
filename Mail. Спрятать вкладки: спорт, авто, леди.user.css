@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name         Mail. Спрятать вкладки: спорт, авто, леди
+@namespace    gil9red
+@version      2025-08-11
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/Mail.%20Спрятать%20вкладки:%20спорт,%20авто,%20леди.user.css
+==/UserStyle== */
+
+@-moz-document domain("mail.ru") {
+  [href="//sportmail.ru/"],
+  [href="//auto.mail.ru/"],
+  [href="//lady.mail.ru/"]
+  {
+      display: none !important;
+  }
+}
