@@ -7,7 +7,7 @@
 @updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Hide%20chat.user.css
 ==/UserStyle== */
 
-@-moz-document regexp("youtube\\.com/watch.+") {
+@-moz-document regexp(".+youtube\\.com/watch.+") {
   ytd-live-chat-frame {
       display: none;
   }
