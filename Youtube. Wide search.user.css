@@ -1,0 +1,37 @@
+/* ==UserStyle==
+@name         Youtube. Wide search
+@namespace    gil9red
+@version      2025-08-12
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Wide%20search.user.css
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+  #end {
+      min-width: 0px !important;
+  }
+  #search,
+  yt-searchbox
+  {
+      margin: 0px !important;
+      padding: 0px !important;
+  }
+  #center:has(yt-searchbox) {
+      flex: 100% !important;
+  }
+  #search #search-form > #container,
+  yt-searchbox,
+  .ytSearchboxComponentInputBox
+  {
+      margin-left: 2px !important;
+  }
+  
+  #masthead #buttons,
+  #voice-search-button,
+  ytd-topbar-menu-button-renderer.style-scope:nth-child(1),
+  ytd-notification-topbar-button-renderer
+  {
+      display: none !important;
+  }
+}
