@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name         Youtube. Hide chat
+@namespace    gil9red
+@version      2025-08-12
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Hide%20chat.user.css
+==/UserStyle== */
+
+@-moz-document regexp("youtube\\.com/watch.+") {
+  ytd-live-chat-frame {
+      display: none;
+  }
+}
