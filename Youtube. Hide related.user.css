@@ -7,7 +7,7 @@
 @updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Hide%20related.user.css
 ==/UserStyle== */
 
-@-moz-document regexp(".+www\\.youtube\\.com/watch.+") {
+@-moz-document regexp(".+youtube\\.com/watch.+") {
   #related {
       display: none;
   }
