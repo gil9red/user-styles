@@ -1,0 +1,27 @@
+/* ==UserStyle==
+@name         Youtube. Спрятать кнопки под видео
+@namespace    gil9red
+@version      2025-08-12
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Спрятать%20кнопки%20под%20видео.user.css
+==/UserStyle== */
+
+@-moz-document regexp(".+youtube\\.com/watch.+") {
+  #actions ytd-button-renderer,
+  #actions #button-shape,
+  #actions #flexible-item-buttons,
+  button[aria-label="Подписаться Плюс"],
+  button[title="Поделиться"],
+  #teaser-carousel,
+  #sponsor-button
+  {
+      display: none !important;
+  }
+  
+  #subscribe-button *,
+  #notification-preference-button *
+  {
+      font-size: 12px;
+  }
+}
