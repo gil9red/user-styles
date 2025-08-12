@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name         Rick-i-morty. Спрятать комментарии
+@namespace    gil9red
+@version      2025-08-09
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/Rick-i-morty.%20Спрятать%20комментарии.user.css
+==/UserStyle== */
+
+@-moz-document domain("rick-i-morty.online") {
+    .post-comments, .comment-respond {
+        display: none;
+    }
+    .comments-title:after {
+        color: gray;
+        font-size: 80%;
+        content: " - спрятаны Stylus";
+    }
+}
