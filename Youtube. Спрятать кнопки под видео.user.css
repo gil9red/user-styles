@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name         Youtube. Спрятать кнопки под видео
 @namespace    gil9red
-@version      2025-08-12
+@version      2025-08-15
 @author       gil9red
 @homepageURL  https://github.com/gil9red/user-styles
 @updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Спрятать%20кнопки%20под%20видео.user.css
 ==/UserStyle== */
 
-@-moz-document regexp(".+youtube\\.com/watch.+") {
+@-moz-document regexp(".+youtube\\.com/watch.+"), regexp(".+youtube\\.com/live/.+") {
   #actions ytd-button-renderer,
   #actions #button-shape,
   #actions #flexible-item-buttons,
