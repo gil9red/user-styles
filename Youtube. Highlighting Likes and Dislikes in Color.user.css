@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name         Youtube. Highlighting Likes and Dislikes in Color
 @namespace    gil9red
-@version      2025-08-08
+@version      2025-08-15
 @author       gil9red
 @homepageURL  https://github.com/gil9red/user-styles
 @updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Highlighting%20Likes%20and%20Dislikes%20in%20Color.user.css
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://www.youtube.com/watch") {
+@-moz-document url-prefix("https://www.youtube.com/watch"), regexp(".+youtube\\.com/live/.+") {
   /* Like */
   #columns:has(
       like-button-view-model 
