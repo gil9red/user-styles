@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name         GamesVoice. Возвращение выделения текста
+@namespace    gil9red
+@version      2025-08-29
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/GamesVoice.%20Возвращение%20выделения%20текста.user.css
+==/UserStyle== */
+
+@-moz-document domain("www.gamesvoice.ru") {
+  .select-none {
+      -webkit-user-select: auto !important;
+      -moz-user-select: auto !important;
+      user-select: auto !important;
+  }
+}
