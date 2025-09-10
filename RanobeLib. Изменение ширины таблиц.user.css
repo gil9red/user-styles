@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         RanobeLib. Изменение ширины таблиц
 @namespace    gil9red
-@version      2025-08-07
+@version      2025-09-10
 @author       gil9red
 @homepageURL  https://github.com/gil9red/user-styles
 @updateURL    https://github.com/gil9red/user-styles/raw/main/RanobeLib.%20Изменение%20ширины%20таблиц.user.css
@@ -13,5 +13,9 @@
   }
   main > .text-content table[style *= width] td {
       padding: 10px;
+  }
+  main > .text-content table[style *= margin-left] {
+      /* NOTE: Чтобы убрать из стиля margin-left:36pt; */
+      margin-left: 0px !important;
   }
 }
