@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name         Itch. BIG No thanks
+@namespace    gil9red
+@version      2025-10-07
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/Itch.%20BIG%20No%20thanks.user.css
+==/UserStyle== */
+
+@-moz-document domain("itch.io") {
+    .download_links * {
+        font-size: 2rem !important;
+        color: red !important;
+    }
+}
