@@ -1,0 +1,27 @@
+/* ==UserStyle==
+@name         VeronaPizzaRu. Изменение GUI
+@namespace    gil9red
+@version      2025-10-26
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/VeronaPizzaRu.%20Изменение%20GUI.user.css
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.verona-pizza.ru/node/") {
+    .views-row > div {
+        border: 0.5px solid #333;
+    }
+    .views-row {
+        border: 1px solid #333;
+        width: 360px !important;
+    }
+    .views-field-add-to-cart {
+        background: #ff8f0038;
+    }
+    .views-field-title * {
+        font-size: large;
+    }
+    .views-field-title {
+        background: #ff8f0038;
+    }
+}
