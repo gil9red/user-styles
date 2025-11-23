@@ -1,16 +1,19 @@
 /* ==UserStyle==
 @name         FFForever. Скрыть левую панель
 @namespace    gil9red
-@version      2025-08-09
+@version      2025-11-24
 @author       gil9red
 @homepageURL  https://github.com/gil9red/user-styles
 @updateURL    https://github.com/gil9red/user-styles/raw/main/FFForever.%20Скрыть%20левую%20панель.user.css
 ==/UserStyle== */
 
 @-moz-document domain("ffforever.info") {
-  .content > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1),
-  .content > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1)
-  {
-      display: none;
-  }
+    .content > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1),
+    .content > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1)
+    {
+        display: none;
+    }
+    [width="1020"] {
+        width: 100% !important;
+    }
 }
