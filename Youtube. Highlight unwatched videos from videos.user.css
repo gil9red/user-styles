@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name         Youtube. Highlight unwatched videos from videos
+@namespace    gil9red
+@version      2025-12-01
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Highlight%20unwatched%20videos%20from%20videos.user.css
+==/UserStyle== */
+
+@-moz-document regexp("https://www.youtube.com/.+/videos") {
+  #contents ytd-rich-item-renderer:not(
+      :has(ytd-thumbnail-overlay-resume-playback-renderer)
+  ) {
+      box-shadow: 0px 0px 12px green;
+  }
+}
