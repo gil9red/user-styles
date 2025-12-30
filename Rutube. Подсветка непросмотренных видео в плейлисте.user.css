@@ -1,16 +1,16 @@
 /* ==UserStyle==
 @name         Rutube. Подсветка непросмотренных видео в плейлисте
 @namespace    gil9red
-@version      2025-08-07
+@version      2025-12-30
 @author       gil9red
 @homepageURL  https://github.com/gil9red/user-styles
 @updateURL    https://github.com/gil9red/user-styles/raw/main/Rutube.%20Подсветка%20непросмотренных%20видео%20в%20плейлисте.user.css
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://rutube.ru/plst/") {
-  .wdp-playlist-video-card-module__card:not(
-    :has(.wdp-card-progress-bar-module__progress-bar__watched)
-  ) {
-      box-shadow: 0px 0px 12px green;
-  }
+    .wdp-playlist-video-card-module__card:not(
+        :has(.wdp-card-progress-bar-module__progress-bar__watched)
+    ) {
+        box-shadow: 0px 0px 12px green;
+    }
 }
