@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name         Rutube. Подсветка непросмотренных видео на канале
+@namespace    gil9red
+@version      2025-12-30
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/Rutube.%20Подсветка%20непросмотренных%20видео%20на%20канале.user.css
+==/UserStyle== */
+
+@-moz-document regexp("https://rutube.ru/.+?/videos/") {
+    .wdp-card-wrapper-module__wrapper:not(
+        :has(.wdp-card-progress-bar-module__progress-bar__watched)
+    ) {
+        box-shadow: 0px 0px 12px green;
+    }
+}
