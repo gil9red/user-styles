@@ -19,8 +19,9 @@
             /* VR */
             [href *= "tags/ru/VR"],
         )
-    )
+    ) *
     {
-        opacity: 0.3;
+        color: gray !important;
+        background: gray !important;
     }
 }
