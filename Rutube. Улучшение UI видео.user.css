@@ -1,21 +1,26 @@
 /* ==UserStyle==
 @name         Rutube. Улучшение UI видео
 @namespace    gil9red
-@version      2025-08-12
+@version      2025-01-21
 @author       gil9red
 @homepageURL  https://github.com/gil9red/user-styles
 @updateURL    https://github.com/gil9red/user-styles/raw/main/Rutube.%20Улучшение%20UI%20видео.user.css
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://rutube.ru/video/") {
-  #communicationBanner,
-  .wdp-recommendation-promo-module__adfox
-  {
-    display: none;
-  }
+    #communicationBanner,
+    .wdp-recommendation-promo-module__adfox
+    {
+        display: none;
+    }
   
-  /* Элемент с комментариями имеет определенный курсор мышки */
-  .wdp-comments-module__comments-header-container {
-    cursor: pointer;
-  }
+    /* Элемент с комментариями имеет определенный курсор мышки */
+    .wdp-comments-module__comments-header-container {
+        cursor: pointer;
+    }
+
+    /* Убрано затемнение, которое появляется поверх видео */
+    [class *= controls-overlay-module__overlay___] {
+        display: none;
+    }
 }
