@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name         Youtube. Hide watched videos from videos
+@namespace    gil9red
+@version      2026-03-09
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Hide%20watched%20videos%20from%20videos.user.css
+==/UserStyle== */
+
+@-moz-document regexp("https://www.youtube.com/.+/videos") {
+    #contents > ytd-rich-item-renderer > div.ytd-rich-item-renderer:has(
+        ytd-thumbnail-overlay-resume-playback-renderer
+    ) {
+        display: none;
+    }
+    #contents > ytd-rich-item-renderer:has(
+        > div.ytd-rich-item-renderer ytd-thumbnail-overlay-resume-playback-renderer
+    )::before {
+        content: "// The video is hidden by Stylus";
+        font-size: larger;
+        color: var(--yt-spec-text-primary);
+    }
+}
