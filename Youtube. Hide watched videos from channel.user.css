@@ -1,10 +1,10 @@
 /* ==UserStyle==
-@name         Youtube. Hide watched videos from videos
+@name         Youtube. Hide watched videos from channel
 @namespace    gil9red
 @version      2026-03-09
 @author       gil9red
 @homepageURL  https://github.com/gil9red/user-styles
-@updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Hide%20watched%20videos%20from%20videos.user.css
+@updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Hide%20watched%20videos%20from%20channel.user.css
 ==/UserStyle== */
 
 @-moz-document regexp("https://www.youtube.com/.+/videos") {
