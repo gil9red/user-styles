@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name         Youtube. Grayscale watched videos from channel
+@namespace    gil9red
+@version      2026-03-10
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Grayscale%20watched%20videos%20from%20channel.user.css
+==/UserStyle== */
+
+@-moz-document regexp("https://www.youtube.com/.+/videos") {
+    #contents > ytd-rich-item-renderer > div.ytd-rich-item-renderer:has(
+        ytd-thumbnail-overlay-resume-playback-renderer
+    ) {
+        filter: grayscale(100%) opacity(0.4); /* Делаем серым и полупрозрачным */
+        transition: filter 0.4s ease, opacity 0.4s ease;
+    }
+
+    /* Эффект: при наведении возвращаем цвета */
+    #contents > ytd-rich-item-renderer > div.ytd-rich-item-renderer:has(
+        ytd-thumbnail-overlay-resume-playback-renderer
+    ):hover {
+        filter: grayscale(0%);
+        opacity: 1;
+    }
+}
