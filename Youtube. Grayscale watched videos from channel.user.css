@@ -7,8 +7,8 @@
 @updateURL    https://github.com/raw/main/Youtube.%20Grayscale%20watched%20videos%20from%20channel.user.css
 @preprocessor stylus
 
-@var range grayLevel    "Gray"    [100, 0, 100, 1, "%"]
-@var range opacityLevel "Opacity" [0.5, 0, 1, 0.05]
+@var range    grayLevel    "Gray"    [100, 0, 100, 1, "%"]
+@var range    opacityLevel "Opacity" [0.5, 0, 1, 0.05]
 ==/UserStyle== */
 
 @-moz-document domain("www.youtube.com") {
