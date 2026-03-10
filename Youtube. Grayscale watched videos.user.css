@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Youtube. Grayscale watched videos
 @namespace    gil9red
-@version      2026-03-10
+@version      2026-03-11
 @author       gil9red
 @homepageURL  https://github.com/gil9red/user-styles
 @updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Grayscale%20watched%20videos.user.css
@@ -17,10 +17,17 @@
   ytd-grid-video-renderer,
   ytd-playlist-video-renderer {
     &:has(ytd-thumbnail-overlay-resume-playback-renderer) {
-      filter: grayscale(grayLevel);
-
-      &:hover {
+      & #thumbnail img, 
+      & #details {
+        filter: grayscale(grayLevel);
+        opacity: opacityLevel;
+        transition: all 0.2s ease-in-out;
+      }
+      
+      &:hover #thumbnail img,
+      &:hover #details {
         filter: grayscale(0);
+        opacity: 1;
       }
     }
   }
