@@ -14,4 +14,4 @@
         &:not(
             :has(ytd-thumbnail-overlay-resume-playback-renderer)
         )
-            box-shadow: 0px 0px 12px green;
+            box-shadow: 0px 0px 12px green
