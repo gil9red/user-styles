@@ -12,18 +12,18 @@
 ==/UserStyle== */
 
 @-moz-document domain("www.youtube.com")
-    ytd-video-renderer,
-    ytd-rich-item-renderer,
-    ytd-grid-video-renderer,
+    ytd-video-renderer
+    ytd-rich-item-renderer
+    ytd-grid-video-renderer
     ytd-playlist-video-renderer
         &:has(ytd-thumbnail-overlay-resume-playback-renderer)
-            & #thumbnail img, 
+            & #thumbnail img
             & #details
                 filter: grayscale(grayLevel)
                 opacity: opacityLevel
                 transition: all 0.2s ease-in-out
         
-        &:hover #thumbnail img,
+        &:hover #thumbnail img
         &:hover #details
             filter: grayscale(0)
             opacity: 1
