@@ -9,7 +9,7 @@
 ==/UserStyle== */
 
 @-moz-document regexp("https://www.youtube.com/.+/videos"), url-prefix("https://www.youtube.com/playlist?list=")
-    ytd-rich-item-renderer,
+    ytd-rich-item-renderer
     ytd-playlist-video-renderer
         &:not(
             :has(ytd-thumbnail-overlay-resume-playback-renderer)
