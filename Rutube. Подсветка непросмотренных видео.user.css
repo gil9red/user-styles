@@ -9,7 +9,7 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://rutube.ru/plst/"), regexp("https://rutube.ru/.+?/videos/")
-    .wdp-playlist-video-card-module__card,
+    .wdp-playlist-video-card-module__card
     .wdp-card-wrapper-module__wrapper
         &:not(
             :has(.wdp-card-progress-bar-module__progress-bar__watched)
