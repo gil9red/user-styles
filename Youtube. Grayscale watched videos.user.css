@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Youtube. Grayscale watched videos
 @namespace    gil9red
-@version      2026-03-11
+@version      2026-03-15
 @author       gil9red
 @homepageURL  https://github.com/gil9red/user-styles
 @updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Grayscale%20watched%20videos.user.css
@@ -11,24 +11,19 @@
 @var range    opacityLevel "Opacity" [0.5, 0, 1, 0.05]
 ==/UserStyle== */
 
-@-moz-document domain("www.youtube.com") {
-  ytd-video-renderer,
-  ytd-rich-item-renderer,
-  ytd-grid-video-renderer,
-  ytd-playlist-video-renderer {
-    &:has(ytd-thumbnail-overlay-resume-playback-renderer) {
-      & #thumbnail img, 
-      & #details {
-        filter: grayscale(grayLevel);
-        opacity: opacityLevel;
-        transition: all 0.2s ease-in-out;
-      }
-      
-      &:hover #thumbnail img,
-      &:hover #details {
-        filter: grayscale(0);
-        opacity: 1;
-      }
-    }
-  }
-}
+@-moz-document domain("www.youtube.com")
+    ytd-video-renderer,
+    ytd-rich-item-renderer,
+    ytd-grid-video-renderer,
+    ytd-playlist-video-renderer
+        &:has(ytd-thumbnail-overlay-resume-playback-renderer)
+            & #thumbnail img, 
+            & #details
+                filter: grayscale(grayLevel)
+                opacity: opacityLevel
+                transition: all 0.2s ease-in-out
+        
+        &:hover #thumbnail img,
+        &:hover #details
+            filter: grayscale(0)
+            opacity: 1
