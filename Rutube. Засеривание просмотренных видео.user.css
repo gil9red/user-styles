@@ -1,0 +1,29 @@
+/* ==UserStyle==
+@name         Rutube. Засеривание просмотренных видео
+@namespace    gil9red
+@version      2026-03-15
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/Rutube.%20Засеривание%20просмотренных%20видео.user.css
+@preprocessor stylus
+
+@var range    grayLevel    "Серый"        [100, 0, 100, 1, "%"]
+@var range    opacityLevel "Прозрачность" [0.5, 0, 1, 0.05]
+==/UserStyle== */
+
+@-moz-document domain("rutube.ru")
+    .wdp-playlist-video-card-module__card,
+    .wdp-card-wrapper-module__wrapper
+        &:has(.wdp-card-progress-bar-module__progress-bar__watched)
+            & img
+            & .wdp-card-description-module__descriptionWrapper
+            & .wdp-playlist-video-card-module__info
+                filter: grayscale(grayLevel)
+                opacity: opacityLevel
+                transition: all 0.2s ease-in-out
+        
+        &:hover img
+        &:hover .wdp-card-description-module__descriptionWrapper
+        &:hover .wdp-playlist-video-card-module__info
+            filter: grayscale(0)
+            opacity: 1
