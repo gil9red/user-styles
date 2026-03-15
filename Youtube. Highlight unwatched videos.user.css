@@ -8,7 +8,7 @@
 @preprocessor stylus
 ==/UserStyle== */
 
-@-moz-document regexp("https://www.youtube.com/.+/videos") , url-prefix("https://www.youtube.com/playlist?list=")
+@-moz-document regexp("https://www.youtube.com/.+/videos"), url-prefix("https://www.youtube.com/playlist?list=")
     ytd-rich-item-renderer,
     ytd-playlist-video-renderer
         &:not(
