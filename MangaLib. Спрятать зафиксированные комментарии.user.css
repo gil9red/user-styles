@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name         MangaLib. Спрятать зафиксированные комментарии
+@namespace    gil9red
+@version      2026-04-01
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles
+@updateURL    https://github.com/gil9red/user-styles/raw/main/MangaLib.%20Спрятать%20зафиксированные%20комментарии.user.css
+@preprocessor stylus
+==/UserStyle== */
+
+@-moz-document domain("mangalib.me")
+    .comments-sticky
+        & .comment.is-sticky
+            display: none
+        &::after
+            content: "// Зафиксированные комментарии спрятаны Stylus"
