@@ -14,3 +14,4 @@
             display: none
         &::after
             content: "// Зафиксированные комментарии спрятаны Stylus"
+            margin-left: 10px
