@@ -10,11 +10,13 @@
 
 @-moz-document domain("mangalib.me")
     .comments-sticky
-        & .comment.is-sticky
-            display: none
+        margin-top: 0px !important
+        margin-right: 0px !important
+        margin-bottom: 0px !important
+        margin-left: 0px !important
+
         &::after
             content: "// Зафиксированные комментарии спрятаны Stylus"
-        margin-top: 0px !important;
-        margin-right: 0px !important;
-        margin-bottom: 0px !important;
-        margin-left: 0px !important;
+
+        & .comment.is-sticky
+            display: none
