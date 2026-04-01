@@ -14,4 +14,7 @@
             display: none
         &::after
             content: "// Зафиксированные комментарии спрятаны Stylus"
-            margin-left: 10px
+        margin-top: 0px !important;
+        margin-right: 0px !important;
+        margin-bottom: 0px !important;
+        margin-left: 0px !important;
