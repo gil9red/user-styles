@@ -1,26 +1,26 @@
 /* ==UserStyle==
 @name         Rutube. Улучшение UI видео
+@version      2026-04-15
 @namespace    gil9red
-@version      2025-01-21
 @author       gil9red
-@homepageURL  https://github.com/gil9red/user-styles
+@homepageURL  https://github.com/gil9red/user-styles/blob/main/Rutube.%20Улучшение%20UI%20видео.user.css
 @updateURL    https://github.com/gil9red/user-styles/raw/main/Rutube.%20Улучшение%20UI%20видео.user.css
+@preprocessor stylus
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://rutube.ru/video/") {
-    #communicationBanner,
+@-moz-document url-prefix("https://rutube.ru/video/")
+    #communicationBanner
     .wdp-recommendation-promo-module__adfox
-    {
-        display: none;
-    }
+    /* Убрано затемнение, которое появляется поверх видео */
+    [class *= controls-overlay-module__overlay___]
+    /* Кнопка доната */
+    .wdp-donation-buton-module__button
+    /* Кнопка "Смотреть позже" */
+    .wdp-video-row-actions-button-module__item:has(.svg-icon--IconWatchLater)
+    /* Кнопка "Поделиться" */
+    .wdp-video-row-actions-button-module__item:has(.svg-icon--IconVideoToolbarShareVideo)
+        display: none
   
     /* Элемент с комментариями имеет определенный курсор мышки */
-    .wdp-comments-module__comments-header-container {
-        cursor: pointer;
-    }
-
-    /* Убрано затемнение, которое появляется поверх видео */
-    [class *= controls-overlay-module__overlay___] {
-        display: none;
-    }
-}
+    .wdp-comments-module__comments-header-container
+        cursor: pointer
