@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         VkVideo. Улучшение UI видео.user.css
-@version      2026-04-20
+@version      2026-04-24
 @namespace    gil9red
 @author       gil9red
 @homepageURL  https://github.com/gil9red/user-styles/blob/main/VkVideo.%20Улучшение%20UI%20видео.user.css
@@ -10,7 +10,7 @@
 
 @-moz-document url-prefix("https://vkvideo.ru/video-")
     [data-testid="video_page_playlist_videos"]
-        height: 800px !important
+        height: 80vh !important
     
     [data-testid="video_card_layout"][class *= vkitVideoCardLayout__cardHorizontalMiniHover]
         background-color: #0f6f284d
