@@ -9,9 +9,6 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://vkvideo.ru/video-")
-    #video_recommendations
-        display: none
-    
     [data-testid="video_page_playlist_videos"]
         height: 800px !important
     
