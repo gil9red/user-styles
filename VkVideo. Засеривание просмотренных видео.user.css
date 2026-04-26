@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         VkVideo. Засеривание просмотренных видео
-@version      2026-04-26
+@version      2026-04-27
 @namespace    gil9red
 @author       gil9red
 @homepageURL  https://github.com/gil9red/user-styles/blob/main/VkVideo.%20Засеривание%20просмотренных%20видео.user.css
@@ -16,10 +16,14 @@
     div[data-testid="catalog_item_video"]
     div[data-testid="playlist-video-card"]
         &:has(div[data-testid="video_card_duration_timeline"])
-            filter: grayscale(grayLevel)
-            opacity: opacityLevel
-            transition: all 0.2s ease-in-out
-        
+            & div[data-testid="video_card_info_layout_container"]
+            & div[class *= vkitVideoCardPreviewImage__container]
+                filter: grayscale(grayLevel)
+                opacity: opacityLevel
+                transition: all 0.2s ease-in-out
+
             &:hover
-                filter: grayscale(0)
-                opacity: 1
+                div[data-testid="video_card_info_layout_container"]
+                div[class *= vkitVideoCardPreviewImage__container]
+                    filter: grayscale(0)
+                    opacity: 1
