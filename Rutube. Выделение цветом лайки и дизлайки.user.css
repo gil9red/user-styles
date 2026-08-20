@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Rutube. Выделение цветом лайки и дизлайки
-@version      2026-04-03
+@version      2026-08-21
 @namespace    gil9red
 @author       gil9red
 @homepageURL  https://github.com/gil9red/user-styles/blob/main/Rutube.%20Выделение%20цветом%20лайки%20и%20дизлайки.user.css
@@ -9,18 +9,12 @@
 
 @-moz-document url-prefix("https://rutube.ru/video/") {
     /* Like */
-    #root:has(
-        button.wdp-video-like-dislike-reactions-module__reaction[aria-pressed="true"]
-        .wdp-animated-reaction-hand-module__wrapper_up
-    ) {
+    #root:has(.wdp-video-like-dislike-reactions-module__button-like[aria-pressed=true]) {
         background: #00ff2214;
     }
 
     /* Dislike */
-    #root:has(
-        button.wdp-video-like-dislike-reactions-module__reaction[aria-pressed="true"]
-        .wdp-animated-reaction-hand-module__wrapper_down
-    ) {
+    #root:has(.wdp-video-like-dislike-reactions-module__button-dislike[aria-pressed=true]) {
         background: #ff000021;
     }
 }
