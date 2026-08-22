@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name         RanobeLib. Спрятать кнопку доната
+@version      2026-08-22
+@namespace    gil9red
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles/blob/main/RanobeLib.%20Спрятать%20кнопку%20доната.user.css
+@updateURL    https://github.com/gil9red/user-styles/raw/main/RanobeLib.%20Спрятать%20кнопку%20доната.user.css
+==/UserStyle== */
+
+@-moz-document regexp("https://ranobelib.me/.+/read/.+") {
+    .donate-button {
+        display: none;
+    }
+}
