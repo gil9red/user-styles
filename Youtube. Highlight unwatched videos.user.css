@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Youtube. Highlight unwatched videos
+@version      2026-08-27
 @namespace    gil9red
-@version      2026-07-03
 @author       gil9red
 @homepageURL  https://github.com/gil9red/user-styles/blob/main/Youtube.%20Highlight%20unwatched%20videos.user.css
 @updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Highlight%20unwatched%20videos.user.css
@@ -19,5 +19,7 @@
             :has(yt-thumbnail-overlay-progress-bar-view-model)
         ):not(
             :has(ytd-thumbnail-overlay-resume-playback-renderer)
+        ):not(
+            :has(a[href *= "/playlist"])
         )
             box-shadow: 0px 0px 12px green
