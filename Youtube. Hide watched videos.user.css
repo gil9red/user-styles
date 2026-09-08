@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name         Youtube. Hide watched videos
+@version      2026-09-08
+@namespace    gil9red
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles/blob/main/Youtube.%20Hide%20watched%20videos.user.css
+@updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Hide%20watched%20videos.user.css
+@preprocessor stylus
+==/UserStyle== */
+
+@-moz-document domain("www.youtube.com")
+    ytd-video-renderer
+    ytd-rich-item-renderer
+    ytd-grid-video-renderer
+    ytd-playlist-video-renderer
+    ytd-playlist-panel-video-renderer
+    yt-lockup-view-model
+        &:has(yt-thumbnail-overlay-progress-bar-view-model)
+            &:before
+                content: "// The video is hidden by Stylus"
+                font-size: larger
+                color: white
+            &> div
+                display: none !important
