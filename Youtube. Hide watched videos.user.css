@@ -16,9 +16,10 @@
     ytd-playlist-panel-video-renderer
     yt-lockup-view-model
         &:has(yt-thumbnail-overlay-progress-bar-view-model)
+        &:has(ytw-thumbnail-overlay-resume-playback-renderer)
             &:before
                 content: "// The video is hidden by Stylus"
                 font-size: larger
                 color: white
-            &> div
+            &> *
                 display: none !important
