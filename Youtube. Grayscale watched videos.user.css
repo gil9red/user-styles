@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Youtube. Grayscale watched videos
+@version      2026-09-08
 @namespace    gil9red
-@version      2026-07-03
 @author       gil9red
 @homepageURL  https://github.com/gil9red/user-styles/blob/main/Youtube.%20Grayscale%20watched%20videos.user.css
 @updateURL    https://github.com/gil9red/user-styles/raw/main/Youtube.%20Grayscale%20watched%20videos.user.css
@@ -19,6 +19,7 @@
     ytd-playlist-panel-video-renderer
     yt-lockup-view-model
         &:has(ytd-thumbnail-overlay-resume-playback-renderer)
+        &:has(ytw-thumbnail-overlay-resume-playback-renderer)
             & #thumbnail img
             & #details
                 filter: grayscale(grayLevel)
