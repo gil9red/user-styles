@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name         Rutube. Засеривание просмотренных видео
+@version      2026-10-03
 @namespace    gil9red
-@version      2026-03-25
 @author       gil9red
-@homepageURL  https://github.com/gil9red/user-styles
+@homepageURL  https://github.com/gil9red/user-styles/blob/main/Rutube.%20Засеривание%20просмотренных%20видео.user.css
 @updateURL    https://github.com/gil9red/user-styles/raw/main/Rutube.%20Засеривание%20просмотренных%20видео.user.css
 @preprocessor stylus
 
@@ -15,7 +15,7 @@
     .wdp-playlist-video-card-module__card
     .wdp-card-wrapper-module__wrapper
     .card-playlist-module__card-playlist
-        &:has(.wdp-card-progress-bar-module__progress-bar__watched)
+        &:has(.wdp-card-progress-bar-module__bottom-wrapper)
             & img
             & .wdp-card-description-module__descriptionWrapper
             & .wdp-playlist-video-card-module__info
