@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name         RanobeHub. Спрятать действие "В избранное" над комментерием
+@version      2026-10-04
+@namespace    gil9red
+@author       gil9red
+@homepageURL  https://github.com/gil9red/user-styles/blob/main/RanobeHub.%20Спрятать%20действие%20В%20избранное%20над%20комментерием.user.css
+@updateURL    https://github.com/gil9red/user-styles/raw/main/RanobeHub.%20Спрятать%20действие%20В%20избранное%20над%20комментерием.user.css
+@preprocessor stylus
+==/UserStyle== */
+
+@-moz-document url-prefix("https://ranobehub.org/ranobe/")
+    div[data-slot="dropdown-menu-content"]
+        & div[role="menuitem"]:has(.lucide-bookmark)
+        & div[role="separator"]
+              display: none
